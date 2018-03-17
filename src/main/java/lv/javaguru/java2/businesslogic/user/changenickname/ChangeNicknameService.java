@@ -22,7 +22,7 @@ public class ChangeNicknameService {
             return new ChangeNicknameResponse(false, errors);
         }
 
-        User currentUser = database.getCurrentUser();
+        User currentUser=database.getCurrentUser();
         currentUser.setNickname(nickname);
         database.setCurrentUser(currentUser);
 

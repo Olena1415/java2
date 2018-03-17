@@ -24,7 +24,7 @@ public class UserService {
 
     public void setCurrentUser(User user){
         database.setCurrentUser(user);
-    }
+    }//  не используется
 
     public void createNewUser(){
         this.newUser = new User();
